@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make html and js work together</title>
+
+    <style>
+        div{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>React to events</h1>
+
+
+    <form id="form">
+        <input id="value1" placeholder="Write the first value" onfocus="onFocus()" onkeypress="keyPress()"/>
+
+
+        <input id="value2" placeholder="Write the second value" oninput="onInput()"/>
+
+
+        <button id="btnCalculate">Calculate</button>
+    </form>
+
+
+
+    <p id="paragraph"></p>
+
+
+    <div id="scrollDiv">In my younger and more
+        vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+        <br><br>
+        'Whenever you feel like criticizing anyone,'
+        he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
+
+    <p>Scrolled <span id="demo">0</span>times</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
